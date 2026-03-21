@@ -1,5 +1,5 @@
 const cacheVersion = 'v1.0.1';
-const cacheTitle = `pairdrop-cache-${cacheVersion}`;
+const cacheTitle = `drop-cache-${cacheVersion}`;
 const relativePathsToCache = [
     './',
     'index.html',
