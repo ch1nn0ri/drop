@@ -592,6 +592,11 @@ x-paper > .btn-row {
     font-size: 20px;
 }
 
+.language-buttons {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
 .file-description {
     max-width: 100%;
 }

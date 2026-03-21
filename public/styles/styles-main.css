@@ -1150,3 +1150,120 @@ body.dark-theme .badge {
         color: #111111;
     }
 }
+
+
+header {
+    display: none !important;
+}
+
+footer.column {
+    margin-bottom: 90px !important;
+}
+
+.floating-dock {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 4px 8px;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+.dock-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s, transform 0.15s;
+    flex-shrink: 0;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    touch-action: manipulation;
+}
+
+.dock-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.dock-btn:active {
+    transform: scale(0.9);
+}
+
+.dock-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+    display: block;
+}
+
+.dock-btn .icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    stroke: none;
+    flex-shrink: 0;
+    display: block;
+}
+
+.dock-divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 4px;
+    flex-shrink: 0;
+}
+
+body.light-theme .floating-dock {
+    background: rgba(30, 30, 30, 0.95);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.light-theme .dock-btn {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+body.light-theme .dock-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+body.light-theme .dock-divider {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 480px) {
+    .floating-dock {
+        padding: 5px 8px;
+        gap: 0;
+        border-radius: 18px;
+    }
+
+    .dock-btn {
+        width: 36px;
+        height: 36px;
+    }
+}

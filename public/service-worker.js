@@ -1,4 +1,4 @@
-const cacheVersion = 'v1.0.2';
+const cacheVersion = 'v1.0.3';
 const cacheTitle = `drop-cache-${cacheVersion}`;
 const relativePathsToCache = [
     './',
