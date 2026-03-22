@@ -840,3 +840,17 @@ x-dialog a {
     margin: auto;
     display: block;
 }
+
+body.dark-theme x-peer.type-secret .icon-wrapper,
+body.dark-theme x-peer.type-public-id .icon-wrapper {
+    background: #555555;
+    background-image: linear-gradient(45deg, #555555 40%, #777777 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not(.light-theme) x-peer.type-secret .icon-wrapper,
+    body:not(.light-theme) x-peer.type-public-id .icon-wrapper {
+        background: #555555;
+        background-image: linear-gradient(45deg, #555555 40%, #777777 100%);
+    }
+}
