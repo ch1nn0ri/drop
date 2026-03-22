@@ -1162,7 +1162,7 @@ footer.column {
 
 .floating-dock {
     position: fixed;
-    bottom: 20px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
@@ -1260,10 +1260,23 @@ body.light-theme .dock-divider {
         padding: 5px 8px;
         gap: 0;
         border-radius: 18px;
+        bottom: 25px;
     }
 
     .dock-btn {
         width: 36px;
         height: 36px;
+    }
+
+    x-instructions {
+        font-size: 11px;
+    }
+
+    x-no-peers h2 {
+        font-size: 16px;
+    }
+
+    x-no-peers div {
+        font-size: 11px;
     }
 }
