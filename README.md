@@ -9,13 +9,6 @@
     Local file sharing <a href="https://drop.stelyx.xyz"><strong>in your web browser</strong></a>. 
     <br>
     Inspired by Apple's AirDrop.
-    <br> 
-    Fork of Snapdrop.
-    <br>
-    <br>
-    <a href="https://github.com/schlagmichdoch/PairDrop/issues">Report a bug</a>
-    <br />
-    <a href="https://github.com/schlagmichdoch/PairDrop/issues">Request feature</a>
   </p>
 </div>
 <br>
